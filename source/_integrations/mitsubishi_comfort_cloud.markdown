@@ -53,7 +53,7 @@ For example, you can use a climate entity in an automation to lower the target t
 
 ## Data updates
 
-The integration {% term polling polls %} each unit every 60 seconds. After a command is accepted, Home Assistant displays the requested setting. Acceptance does not confirm that the unit has applied the command; the next successful poll replaces the displayed setting with the state reported by Mitsubishi.
+The integration {% term polling polls %} each unit every 60 seconds. After you send a command, Home Assistant continues to display the last reported setting until a poll confirms the change. Accepting a command does not confirm that the unit has applied it. A change may take more than one polling cycle to appear if Mitsubishi has not yet reported the new setting.
 
 ## Known limitations
 
